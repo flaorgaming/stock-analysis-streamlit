@@ -1,0 +1,6 @@
+pandas
+streamlit
+yfinance
+tradingview_ta
+requests
+bs4
