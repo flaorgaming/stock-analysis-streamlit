@@ -41,7 +41,7 @@ def get_stock_data(stock):
 
 def get_historical_prices(stock):
     end = datetime.now()
-    start = end - timedelta(days=90)
+    start = end - timedelta(days=30)
     data = yf.download(stock + '.IS', start=start, end=end)
     data.index = pd.to_datetime(data.index).tz_localize('UTC')
     return data['Close']
